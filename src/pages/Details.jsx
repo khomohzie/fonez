@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ProductConsumer } from '../helpers/context'
-import { ButtonContainer } from './Button'
+import { ButtonContainer } from '../components/Button'
 import { Link } from 'react-router-dom'
 
 export default class Details extends Component {
@@ -57,7 +57,7 @@ export default class Details extends Component {
                                     {/* buttons */}
                                     <div>
                                         <Link to="/">
-                                            <ButtonContainer backToShop>Continue shopping</ButtonContainer>
+                                            <ButtonContainer backToShop>back to products</ButtonContainer>
                                         </Link>
 
                                         <ButtonContainer
