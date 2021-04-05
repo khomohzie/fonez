@@ -51,11 +51,16 @@ class ProductProvider extends Component {
 
     addToCart = id => {
         let tempProducts = [...this.state.products];
+
         const index = tempProducts.indexOf(this.getItem(id));
+
         const product = tempProducts[index];
+
         product.inCart = true;
         product.count = 1;
+
         const price = product.price;
+
         product.total = price;
 
         this.setState(() => {
@@ -66,17 +71,21 @@ class ProductProvider extends Component {
             };
         }, this.addTotals);
     };
+
     openModal = id => {
         const product = this.getItem(id);
+
         this.setState(() => {
             return { modalProduct: product, modalOpen: true };
         });
     };
+
     closeModal = () => {
         this.setState(() => {
             return { modalOpen: false };
         });
     };
+    
     increment = id => {
         let tempCart = [...this.state.cart];
         const selectedProduct = tempCart.find(item => {
