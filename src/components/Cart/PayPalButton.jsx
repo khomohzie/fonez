@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Cart extends Component {
+export default class PayPalButton extends Component {
     render() {
         return (
             <div>
-                <h3>Hello from Cart</h3>
+                <h1>Item Bought</h1>
             </div>
         )
     }

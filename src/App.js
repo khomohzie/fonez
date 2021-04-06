@@ -5,7 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import ProductList from './pages/ProductList';
 import Details from './pages/Details';
-import Cart from './pages/Cart';
+import Cart from './components/Cart';
 import Default from './pages/Default';
 import Modal from "./components/Modal";
 
